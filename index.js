@@ -1,9 +1,17 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  for (let i = 0; i < word.length / 2; i++){
+      if (word[i] !== word[word.length - 1 - i]) {
+        return false
+      }
+    }
+    return true
 }
 
 /* 
-  Add your pseudocode here
+  iterate over string from the first letter to the middle letter
+  compare each letter to the corresponding letter at the end of the string
+    if any letters don't match, return false
+  if we reach the middle and all letter match, return true
 */
 
 /*
